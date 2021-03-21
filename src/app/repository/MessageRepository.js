@@ -20,29 +20,12 @@ class MensagemRepository {
     async findByMessage(data) {
         const messages = await Message.findAll({ where: { message: data } });
         if (!messages || messages == "") {
-            return 'message not found';
+            return '';
         } else {
         return messages;
         }
     }
 
-    async findByFrom(data) {
-        const messages = await Message.findAll({ where: { from: data } });
-        if (!messages || messages == "") {
-            return '';
-          } else {
-            return messages;
-          }
-    }
-
-    async findByTargetId(data) {
-        const messages = await Message.findAll({ where: { target_id: data } });
-        if (!messages || messages == "") {
-            return '';
-          } else {
-            return messages;
-          }
-    }
 }
 
 module.exports = new MensagemRepository();

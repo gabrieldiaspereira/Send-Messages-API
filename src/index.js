@@ -11,6 +11,5 @@ const app = express();
 
 app.use(express.json());
 app.use(routes);
-console.log(port);
-console.log(appUrl);
+
 app.listen(port, appUrl);
