@@ -3,14 +3,15 @@
 <i>Uma API responsável por fazer envio de mensagens.</i>
 
 <b>Tecnologias utilizadas:</b>
-● Node.js
-● MVC
-● Sequelize ORM
-● PostgreSQL
-● Docker
+<br>
+● Node.js <br>
+● MVC <br>
+● Sequelize ORM <br>
+● PostgreSQL <br>
+● Docker <br>
 
 # Variaveis ambiente
-PORT=3333
+PORT=3333 <br>
 APP_URL=0.0.0.0
 
 # Rodando com docker
