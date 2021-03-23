@@ -28,6 +28,20 @@ npm start
 Change the `APP_URL` variable in .env to "localhost"
 Change `host` in src/config/database.js to "localhost"
 
+# Banco de dados
+Para rodar as migrations:
+```
+npx sequelize db:migrate
+```
+Ou criar:
+```
+npx sequelize migration:create --name=create-messages
+```
+host: 'localhost',
+username: 'root',
+password: 'root',
+database: 'postgres'
+
 # Rotas
 ```bash
 Enviar uma mensagem
